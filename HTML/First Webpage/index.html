@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--metadata-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Dana Baeisa">
+    <meta name="description" content="This contains everything I need to learn in HTML">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<!--header has h1, article h2, section h3. articles are inside main.-->
+
+<body>
+    <!--can be more than 1 header per page, but needs to follow the heading hierarichy-->
+    <header>
+        <!--only one h1-->
+        <h1>My Webiste</h1>
+
+        <!--nav area, if you have more than one label them for assistive tech-->
+        <nav aria-label="primary-navigation">
+            <!--try to move this h2 and try the html5 outliner-->
+            <h2>Primary-navigation</h2>
+            <ul>
+                <li>
+                    <a href="#me">Me, Myself and I</a>
+                </li>
+                <li>
+                    <a href="#personal-dev">Personal Development</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+    <!--only one main area per page-->
+    <main>
+        <!--first section-->
+        <!--semantic tags provide additional meaning rather than a generic divider-->
+        <!--article has its own topic and can exist on another webiste on its own with no affect on its meaning-->
+        <article id="me">
+            <!--TODO: Add more things to do.-->
+            <h2>Me, Myself and I</h2>
+            <p>Hi, my name is Dana. An IT student in FCIT, who is on her way to be <em>full-stack developer</em>.</p>
+
+            <section>
+                <h3>My Logo</h3>
+                <!--screen readers cannot reach title-->
+                <img src="img/myLogo.jpg" alt="a matrix with my name in it" title="My personal logo" width="200" height="200">
+
+                <!--not only for pics-->
+                <figure>
+                    <!--can only be the first element inside figure or last element-->
+                    <figcaption>Just keep coding.</figcaption>
+                    <p>
+                        <!--cannot have an actual element otherwise it will apply it to the page-->
+                        <!-- semantic meaning -->
+                        <code>&lt;h1&gt;An infinite loop of coding is not a bad thing.&lt;h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Habits</h3>
+                <p>I enjoy those little things like:
+                    <br>A morning walk.
+                    <br>Journaling.
+                    <br>A cucmber snack.
+                </p>
+            </section>
+
+            <section>
+                <h3>Places I Wanna Visit</h3>
+                <p>I need to go <strong>away</strong>.
+                    <br>Not just anywhere but to:</p>
+                <address>
+                    <!--absolute reference-->
+                    <a href="https://en.wikipedia.org/wiki/Inca_Trail_to_Machu_Picchu">INCA TRAIL, MACHU PICCHU</a>
+                    <br>
+                    PUEZ-ODLE ALTOPIANO, DOLOMITES
+                    <br>
+                    FIMMVÖRÐUHÁLS HIKE
+                </address>
+
+                <!--complementary text, not as important as the rest of the article-->
+                <!-- semantic -->
+                <aside>
+                    <!--d and s work together.-->
+                    <details>
+                        <summary>
+                            Guess what <mark>sport</mark> I have done in the past?
+                        </summary>
+                        <p>
+                            Archery, <time datetime="2019">2019</time>, at <time datetime="14:00">2 pm</time> everyday.
+                        </p>
+                    </details>
+                </aside>
+            </section>
+
+        </article>
+
+        <hr>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <!--second section-->
+        <article id="personal-dev">
+            <h2>Personal Development</h2>
+            <p>It has began a long time ago, still going, and will never end.</p>
+
+            <figure>
+                <img src="img/personalDev.jpg" alt="dark street with red lights" title="one of fav. photos" width="400" height="500" loading="lazy">
+                <figcaption>
+                    <!--screen readers cannot reach abbr I think cuz also title-->
+                    Love the <abbr title="A sad feeling of having no emotion or purpose.">emptiness</abbr>.
+                </figcaption>
+            </figure>
+
+            <section>
+                <h3>Journaling</h3>
+                <p>Topics I usually write about:</p>
+                <ol>
+                    <li>Education progress.</li>
+                    <li>Feelings.</li>
+                    <li>Thoughts.</li>
+                    <li>Deep thinking.</li>
+                    <li>Reflecting.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Helping Resources</h3>
+                <p>Books:</p>
+                <ul>
+                    <li>
+                        <p>The Subtle Art of Not Giving a Fuck.</p>
+                    </li>
+                    <li>
+                        <p>Rich Dad, Poor Dad.</p>
+                    </li>
+                </ul>
+
+                <p>Routine Organizer</p>
+                <!-- description list -->
+                <dl>
+                    <!-- description term -->
+                    <dt>Building habits</dt>
+                    <!-- description detail -->
+                    <dd>Consistency not the amount.</dd>
+                    <dt>Eat that frog</dt>
+                    <dd>Start with what you <strong>avoid</strong>.</dd>
+                </dl>
+            </section>
+        </article>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really love to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info.</legend>
+                <!-- or div, for next line. -->
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Dana"
+                    autocomplete="on" required autofocus>
+                </p>
+
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Baeisa"
+                    autocomplete="on" required>
+                 </p>
+                <p>
+                    <!-- not encrypted -->
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="your secret"
+                    required>
+                 </p>
+            
+                <p>
+                    <!-- match the pattern to submit the form, tel opens a number pad. -->
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                    required>
+                 </p>
+                <p>
+                    <!-- the value is sent to the server not the placeholder, you need a default value here. -->
+                    <label for="decade">Favorite decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2024" step="10"
+                    value="1980">
+                 </p>
+
+
+                <p>
+                    <label for="drink">Favorite Drink: </label>
+                    <!-- shift or control -->
+                    <select name="drink" id="drink" multiple size="3">
+                        <!-- first selected by default -->
+                        <optgroup label="Coffee">
+                        <option value="espresso">Espresso</option>
+                        <option value="iced coffee" selected>Iced Coffee</option>
+                        <option value="lattee">Lattee</option>
+                    </optgroup>
+                    <optgroup label="Juice">
+                        <option value="mango">Mango</option>
+                        <option value="guava">Guava</option>
+                        <option value="apple">apple</option>
+                    </optgroup>
+                    <option value="other">Other</option>
+                    </select>
+                 </p>  
+ 
+
+                 <!-- <p>
+                    <label for="drink">Favorite Drink: </label>
+                    <input type="text" name="drink" id="drink" list="drink-list">
+                    <datalist id="drink-list">
+                        <option value="espresso">
+                        <option value="iced latte">
+                        <option value="mango">
+                        <option value="other">
+                    </datalist>
+                 </p> -->
+                </fieldset>
+                <!-- fieldset is a block element already but extra space -->
+                <br>
+                <fieldset>
+                    <legend>What is your favorite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" checked>
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="buger">
+                        <label for="buger">Burger</label>
+                    </p>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Do you have a pet?</legend>
+                    <p>
+                        <input type="checkbox" name="pet" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="cat" value="cat" checked>
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pet" id="frog" value="frog">
+                        <label for="frog">Frog</label>
+                    </p>
+                    <p>
+                        <!-- cannot have the id other cuz its already in the page. -->
+                        <input type="checkbox" name="pet" id="otherPet" value="otherPet">
+                        <label for="otherPet">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Leave me a message..</legend>
+                    <label for="message">Your message:</label>
+                    <br>
+                    <br>
+                    <!-- what the user will type is the value, I could write something here between tags as a value but no. -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here.."></textarea>
+                </fieldset>
+                <br>
+                <!-- more semantic to use button + input can only 
+                    give the button text value inside the value attribute 
+                    , button can have any type of value. <input type="submit" value=""> -->
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Clear</button>
+            </form>
+        </article>
+    </main>
+
+    <hr>
+    <!--can be more than 1-->
+    <footer>
+        <p>
+            <!--page tail-->
+            <!--relative reference-->
+            &lt;&lt;&lt; &copy; <a href="about.html">Dana Baeisa</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back To Top</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
