@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dana Baeisa">
+    <meta name="decription" content="My Travel Blog">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
+    <link rel="stylesheet" href="global.css" type="text/css">
+    <title>Journey-Contact Us</title>
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <img id= logo src="img/logo.png" alt="a suitcase with a slogan" width="100px" height="100px">
+
+        <br>
+        <!-- link each one -->
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class = "header" href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class = "header" href="destinations.html">Destinations</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class = "header" href="tipsAndTricks.html">Tips and Tricks</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class = "header"  href="#"><strong>Contact Us</strong></a></p>
+    </header>
+
+    <main>
+        <h1>Get In Touch With Us</h1>
+        <form action="https://httpbin.org/post" method="post">
+            <fieldset>
+                <legend>Let us get to know you</legend>
+                <p class="form">
+                    <label for="name">Name:</label>
+                    <input type="tel" name="name" id="name" placeholder="your name" required autocomplete="on" autofocus>
+                </p>
+
+                <p class="form">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" min="1980" max="2015" step="5" value="2000">
+                </p>
+                <p class="form">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="...@gamil.com" autocomplete="on" required>
+                </p>
+
+                <p class="form">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="5555555555">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your favorites</legend>
+
+                <p class="form">
+                    <label for="drink">Your Drink:</label>
+                    <br>
+                    <select name="drink" id="drink" multiple size="2">
+                        <optgroup label="Coffee">
+                            <option value="espresso">Espresso</option>
+                            <option value="icedCoffee" selected>Iced Coffee</option>
+                        </optgroup>
+
+                        <optgroup label="freshJuices">
+                            <option value="mango">Mango</option>
+                            <option value="strawberry">Strawberry</option>
+                        </optgroup>
+
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>About Us</legend>
+                <p class="form">
+                    <label>How did you hear about us?</label>
+                    <br>
+                    <!-- the default value is the id -->
+                    <input type="radio" name="hear" id="socialMedia" checked>
+                    <label for="socialMedia">Social Media</label>
+
+                    <br>
+                    <input type="radio" name="hear" id="anotherBlog">
+                    <label for="anotherBlog">Another Blog</label>
+                </p>
+
+                <p class="form">
+                    <label>What do you like the most about us?</label>
+                    <br>
+                     <!-- the default value is the id -->
+                     <input type="checkbox" name="like" id="design" checked>
+                     <label for="design">The Blog Design</label>
+
+                     <br>
+                     <input type="checkbox" name="like" id="offers">
+                     <label for="offers">What the Blog Offers</label>
+                </p>
+
+
+                <p class="form">
+                    <label for="note">Leave a note to us</label>
+                    <br>
+                    <textarea name="note" id="note" cols="30" rows="10" placeholder="leave your note here..."></textarea>
+                </p>
+                <br>
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button>
+            </fieldset>
+
+
+
+
+
+
+        </form>
+    </main>
+    <br>
+    <br>
+    
+    <footer>
+        <p id="footer"><mark>Copyright &copy; Journey</mark></p>
+    </footer>
+</body>
+</html>

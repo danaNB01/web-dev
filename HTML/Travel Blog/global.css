@@ -1,0 +1,104 @@
+/* font size of the body, the fonts, the tables , the buttons cursor, the logo style, every img has a border 'black border' , the pages color*/
+
+
+    #logo{
+        float: left;
+        margin: 10px;
+        border: none;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    body{
+        background: #ebeee8;
+        font-size: 18px;
+        font-family: 'Quicksand', sans-serif;
+    }
+  
+    h1{
+        font-size: 70px;
+        text-align: center;
+        color: #78290f;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    a{
+    color: #78290f;
+    }
+    a:hover{
+        color: #c4a184;
+    }
+
+    .header{
+        text-decoration: none;
+    }
+    img {
+        border: 2px solid #333; /* Set the border width and color */
+        border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    }
+    mark{
+        background-color: #e4e6c8;
+    }
+    /* index.html */
+    #mainImage{
+        position: relative;
+        left: 150px;
+        top: 40px;
+    }
+    #indexPage{
+        background-image: url('img/background.png'); /* Replace 'your-image-url.jpg' with the path to your image */
+        background-size: cover; /* Adjust the size to cover the entire body */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Do not repeat the background image */
+        /* Additional styles can be added based on your design requirements */
+        margin: 0; /* Remove default body margin for better image coverage */
+        padding: 0; /* Remove default body padding for better image coverage */
+    }
+
+/* destinations.html */
+    table{
+        position: relative;
+        top: 50px;
+        left: 70px;
+        width: 70%;
+    }
+    th, td, caption {
+    border: 1px solid #333;
+    padding: 0.5rem;
+    }
+    th, td{
+        height: 40px;
+    }
+    td{
+        text-align: center;
+    }
+
+    /* destination1 */
+    button{
+        cursor: pointer;
+        color: #78290f;
+    }
+    button:hover{
+        color: #c4a184;
+    }
+    #nothernLights{
+        position: relative; 
+        left: 25px;
+    }
+    summary{
+        text-align: center;
+    }
+   
+   /* contact us */
+   .form{
+    text-align: left;
+   }
+   fieldset{
+    width: 500px;
+    margin: auto;
+   }
